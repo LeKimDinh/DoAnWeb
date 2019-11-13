@@ -21,7 +21,6 @@ namespace NewStyleShop_1.Models
         [DefaultValue(0)]
         public double Price { get; set; }
 
-
         [Display(Name ="Bill ID")]
         public int BillID { get; set; }
 

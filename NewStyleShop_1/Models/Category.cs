@@ -26,19 +26,7 @@ namespace NewStyleShop_1.Models
         [Display(Name = "Created Date")]
 
         public DateTime CreatedDate { get; set; }
-        //public DateTime DateCreated
-        //{
-        //    get
-        //    {
-        //        return this.dateCreated.HasValue
-        //           ? this.dateCreated.Value
-        //           : DateTime.Now;
-        //    }
 
-        //    set { this.dateCreated = value; }
-        //}
-
-        //private DateTime? dateCreated = null;
 
 
         [DataType(DataType.Date)]

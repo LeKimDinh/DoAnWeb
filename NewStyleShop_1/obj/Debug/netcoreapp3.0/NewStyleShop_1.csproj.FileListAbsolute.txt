@@ -158,3 +158,6 @@ D:\Học Kỳ 1 Năm 3\DoAnWeb\NewStyleShop_1\obj\Debug\netcoreapp3.0\Razor\Area
 D:\Học Kỳ 1 Năm 3\DoAnWeb\NewStyleShop_1\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\AdminAccount\Edit.cshtml.g.cs
 D:\Học Kỳ 1 Năm 3\DoAnWeb\NewStyleShop_1\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\AdminAccount\Details.cshtml.g.cs
 D:\Học Kỳ 1 Năm 3\DoAnWeb\NewStyleShop_1\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\AdminAccount\Delete.cshtml.g.cs
+D:\Học Kỳ 1 Năm 3\DoAnWeb\NewStyleShop_1\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\Bill\Index.cshtml.g.cs
+D:\Học Kỳ 1 Năm 3\DoAnWeb\NewStyleShop_1\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\Product\Index.cshtml.g.cs
+D:\Học Kỳ 1 Năm 3\DoAnWeb\NewStyleShop_1\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\Product\Create.cshtml.g.cs
