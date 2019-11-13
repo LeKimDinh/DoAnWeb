@@ -237,7 +237,7 @@ namespace NewStyleShop_1.Migrations
                         .HasColumnType("nvarchar(200)")
                         .HasMaxLength(200);
 
-                    b.Property<DateTime>("ModifiedDate")
+                    b.Property<DateTime?>("ModifiedDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
@@ -250,7 +250,7 @@ namespace NewStyleShop_1.Migrations
                         .HasColumnType("nvarchar(50)")
                         .HasMaxLength(50);
 
-                    b.Property<int>("Phone")
+                    b.Property<int?>("Phone")
                         .HasColumnType("int");
 
                     b.Property<bool>("Status")
@@ -276,7 +276,7 @@ namespace NewStyleShop_1.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("DeliverDate")
+                    b.Property<DateTime?>("DeliverDate")
                         .HasColumnType("datetime2");
 
                     b.Property<bool>("Status")
@@ -331,10 +331,9 @@ namespace NewStyleShop_1.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("MetaTitle")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("ModifiedDate")
+                    b.Property<DateTime?>("ModifiedDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
@@ -368,15 +367,15 @@ namespace NewStyleShop_1.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
-                        .HasColumnType("nvarchar(200)")
-                        .HasMaxLength(200);
+                        .HasColumnType("nvarchar(1000)")
+                        .HasMaxLength(1000);
 
                     b.Property<int>("Gender")
                         .HasColumnType("int");
 
                     b.Property<string>("Image")
-                        .HasColumnType("nvarchar(200)")
-                        .HasMaxLength(200);
+                        .HasColumnType("nvarchar(1000)")
+                        .HasMaxLength(1000);
 
                     b.Property<string>("MetaTittle")
                         .HasColumnType("nvarchar(200)")
@@ -386,6 +385,7 @@ namespace NewStyleShop_1.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("nvarchar(200)")
                         .HasMaxLength(200);
 
@@ -401,7 +401,7 @@ namespace NewStyleShop_1.Migrations
                     b.Property<int>("Status")
                         .HasColumnType("int");
 
-                    b.Property<int?>("Top")
+                    b.Property<int>("Top")
                         .HasColumnType("int");
 
                     b.HasKey("ID");
@@ -430,7 +430,7 @@ namespace NewStyleShop_1.Migrations
                         .HasColumnType("nvarchar(200)")
                         .HasMaxLength(200);
 
-                    b.Property<DateTime>("ModifiedDate")
+                    b.Property<DateTime?>("ModifiedDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
@@ -443,7 +443,8 @@ namespace NewStyleShop_1.Migrations
                         .HasColumnType("nvarchar(50)")
                         .HasMaxLength(50);
 
-                    b.Property<int>("Phone")
+                    b.Property<int?>("Phone")
+                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<bool>("Status")
@@ -469,7 +470,7 @@ namespace NewStyleShop_1.Migrations
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("ExpireDate")
+                    b.Property<DateTime?>("ExpireDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")

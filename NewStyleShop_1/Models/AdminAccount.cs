@@ -33,11 +33,13 @@ namespace NewStyleShop_1.Models
         [StringLength(200)]
         public string Email { get; set; }
 
-        public int Phone { get; set; }
+        public int? Phone { get; set; }
 
+        [DataType(DataType.Date)]
         public DateTime CreateDate { get; set; }
 
-        public DateTime ModifiedDate { get; set; }
+        [DataType(DataType.Date)]
+        public DateTime? ModifiedDate { get; set; }
 
         [Required]
         [DefaultValue(1)]

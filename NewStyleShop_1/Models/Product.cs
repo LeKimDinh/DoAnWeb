@@ -14,6 +14,7 @@ namespace NewStyleShop_1.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
 
+        [Required]
         [StringLength(200)]
         [Display(Name = "Name Product")]
         public string Name { get; set; }
@@ -22,13 +23,13 @@ namespace NewStyleShop_1.Models
         public string MetaTittle { get; set; }
 
         [StringLength(10)]
-        [Display(Name = "ID Product")]
+        [Display(Name = "Code Product")]
         public string Code { get; set; }
 
-        [StringLength(200)]
+        [StringLength(1000)]
         public string Description { get; set; }
 
-        [StringLength(200)]
+        [StringLength(1000)]
         [Display(Name = "Image")]
         public string Image { get; set; }
 
@@ -40,12 +41,17 @@ namespace NewStyleShop_1.Models
         public double? PromotionPrice { get; set; }
 
         [Display(Name = "Quantity")]
+        [DefaultValue(0)]
         public int? Quantity { get; set; }
 
+        [Required]
         [Display(Name = "Created Date")]
+        [DataType(DataType.Date)]
         public DateTime CreatedDate { get; set; }
 
+
         [Display(Name = "Modified Date")]
+        [DataType(DataType.Date)]
         public DateTime? ModifiedDate { get; set; }
 
         [Display(Name = "Male Clothes")]
@@ -54,10 +60,9 @@ namespace NewStyleShop_1.Models
 
         [Display(Name = "Top Hot")]
         [DefaultValue(0)]
-        public int? Top { get; set; }
+        public int Top { get; set; }
 
         [Display(Name = "Status")]
-
         [DefaultValue(1)]
         public int Status { get; set; }
 

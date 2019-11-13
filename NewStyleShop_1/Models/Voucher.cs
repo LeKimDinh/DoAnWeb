@@ -23,7 +23,10 @@ namespace NewStyleShop_1.Models
         public int Value { get; set; }
 
         [Required]
+        [DataType(DataType.Date)]
         public DateTime CreateDate { get; set; }
-        public DateTime ExpireDate { get; set; }
+
+        [DataType(DataType.Date)]
+        public DateTime? ExpireDate { get; set; }
     }
 }

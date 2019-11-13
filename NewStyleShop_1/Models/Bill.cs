@@ -17,7 +17,8 @@ namespace NewStyleShop_1.Models
         [Required]
         public DateTime CreatedDate { get; set; }
 
-        public DateTime DeliverDate { get; set; }
+        [DataType(DataType.Date)]
+        public DateTime? DeliverDate { get; set; }
 
         [Required]
         [DefaultValue(0)]

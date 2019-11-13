@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -18,16 +19,31 @@ namespace NewStyleShop_1.Models
         [Display(Name = "Catelogy")]
         public string Name { get; set; }
 
-        [Required]
         public string MetaTitle { get; set; }
 
         [Required]
+        [DataType(DataType.Date)]
         [Display(Name = "Created Date")]
-        public DateTime CreatedDate { get; set; }
 
-        [Required]
+        public DateTime CreatedDate { get; set; }
+        //public DateTime DateCreated
+        //{
+        //    get
+        //    {
+        //        return this.dateCreated.HasValue
+        //           ? this.dateCreated.Value
+        //           : DateTime.Now;
+        //    }
+
+        //    set { this.dateCreated = value; }
+        //}
+
+        //private DateTime? dateCreated = null;
+
+
+        [DataType(DataType.Date)]
         [Display(Name = "Modified Date")]
-        public DateTime ModifiedDate { get; set; }
+        public DateTime? ModifiedDate { get; set; }
 
         [Required]
         [Display(Name = "Status")]

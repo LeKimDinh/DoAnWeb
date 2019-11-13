@@ -34,12 +34,14 @@ namespace NewStyleShop_1.Models
         public string Email { get; set; }
 
         [Required]
-        public int Phone { get; set; }
+        public int? Phone { get; set; }
 
         [Required]
+        [DataType(DataType.Date)]
         public DateTime CreateDate { get; set; }
 
-        public DateTime ModifiedDate { get; set; }
+        [DataType(DataType.Date)]
+        public DateTime? ModifiedDate { get; set; }
 
         [Required]
         [DefaultValue(1)]
